@@ -61,15 +61,16 @@ cmake --build . --config RelWithDebInfo --target install # or make install when 
 ### CMake Options
 Options can be cmake options. such as set compile toolchains, source directory or options of libcopp that control build actions. libcopp options are listed below:
 
-| Option  | Description |
-|---------|-------------|
-BUILD\_SHARED\_LIBS=YES\|NO | [default=NO] Build dynamic library.
-LIBCOPP\_ENABLE\_SEGMENTED\_STACKS=YES\|NO | [default=NO] Enable split stack supported context.(it's only availabe in linux and gcc 4.7.0 or upper)
-LIBCOPP\_ENABLE\_VALGRIND=YES\|NO | [default=YES] Enable valgrind supported context.
-PROJECT\_ENABLE\_UNITTEST=YES\|NO | [default=NO] Build unit test.
-PROJECT\_ENABLE\_SAMPLE=YES\|NO | [default=NO] Build samples.
-PROJECT\_DISABLE\_MT=YES\|NO | [default=NO] Disable multi-thread support.
-LIBCOTASK\_ENABLE=YES\|NO | [default=YES] Enable build libcotask.
-LIBCOPP\_FCONTEXT\_USE\_TSX=YES\|NO | [default=NO] Enable [Intel Transactional Synchronisation Extensions (TSX)](https://software.intel.com/en-us/node/695149).
-GTEST\_ROOT=[path] | set gtest library install prefix path
-BOOST\_ROOT=[path] | set Boost.Test library install prefix path
+| Option                                     | Description                                                                                                               |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| BUILD\_SHARED\_LIBS=YES\|NO                | [default=NO] Build dynamic library.                                                                                       |
+| LIBCOPP\_ENABLE\_SEGMENTED\_STACKS=YES\|NO | [default=NO] Enable split stack supported context.(it's only availabe in linux and gcc 4.7.0 or upper)                    |
+| LIBCOPP\_ENABLE\_VALGRIND=YES\|NO          | [default=YES] Enable valgrind supported context.                                                                          |
+| PROJECT\_ENABLE\_UNITTEST=YES\|NO          | [default=NO] Build unit test.                                                                                             |
+| PROJECT\_ENABLE\_SAMPLE=YES\|NO            | [default=NO] Build samples.                                                                                               |
+| PROJECT\_DISABLE\_MT=YES\|NO               | [default=NO] Disable multi-thread support.                                                                                |
+| LIBCOTASK\_ENABLE=YES\|NO                  | [default=YES] Enable build libcotask.                                                                                     |
+| LIBCOPP\_FCONTEXT\_USE\_TSX=YES\|NO        | [default=NO] Enable [Intel Transactional Synchronisation Extensions (TSX)](https://software.intel.com/en-us/node/695149). |
+| GTEST\_ROOT=[path]                         | set gtest library install prefix path                                                                                     |
+| BOOST\_ROOT=[path]                         | set Boost.Test library install prefix path                                                                                |
+
